@@ -1,0 +1,195 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgb(22, 14, 14);
+
+    h1{
+        user-select: none;
+
+        a{
+            font-size: 2rem;
+            user-select: none;
+            color: white;
+            cursor: default;
+        }
+    }
+
+    .nav{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        font-family: "Sour Gummy", sans-serif;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        padding: 20px 20px;
+        align-items: center;
+        gap: 20px;
+
+        h1{
+            a{
+                font-size: 1.5rem;
+            }
+        }
+
+        .nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 60px;
+            right: 40px;
+            align-items: center;
+            min-height: 260px;
+            background-color: rgb(51, 31, 31);
+            border-radius: 10px;
+            overflow: hidden;
+            z-index: 99;
+
+            li{
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 150px;
+                    min-height: 55px;
+                }
+    
+                .active{
+                    background-color: red;
+                }
+            }
+
+        }
+
+        .nav.show{
+            display: flex;
+            animation: menuDrop 0.15s 1 linear forwards;
+        }
+
+        .nav:not(.show){
+            display: flex;
+            animation: menuHide 0.15s 1 linear forwards;
+        }
+
+        @keyframes menuDrop {
+            from{
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes menuHide {
+            from{
+                transform: scale(1);
+                opacity: 1;
+            }
+            to{
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+        img{
+            display: none;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .header{
+        padding: 20px 30px;
+        align-items: center;
+        gap: 10px;
+
+        h1{
+            a{
+                font-size: 1.2rem;
+            }
+        }
+
+        .nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 60px;
+            right: 40px;
+            align-items: center;
+            min-height: 220px;
+            background-color: rgb(51, 31, 31);
+            border-radius: 10px;
+            overflow: hidden;
+            z-index: 99;
+
+            li{
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 150px;
+                    min-height: 55px;
+                }
+    
+                .active{
+                    background-color: red;
+                }
+            }
+
+        }
+
+        .nav.show{
+            display: flex;
+            animation: menuDrop 0.15s 1 linear forwards;
+        }
+
+        .nav:not(.show){
+            display: flex;
+            animation: menuHide 0.15s 1 linear forwards;
+        }
+
+        @keyframes menuDrop {
+            from{
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes menuHide {
+            from{
+                transform: scale(1);
+                opacity: 1;
+            }
+            to{
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+        img{
+            width: 28px;
+            display: block;
+            cursor: pointer;
+        }
+    }
+    
+}

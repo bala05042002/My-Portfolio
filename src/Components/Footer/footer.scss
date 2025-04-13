@@ -1,0 +1,126 @@
+footer{
+    background-color: rgb(44, 28, 28);
+    flex: 1;
+    height: 75%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(12, 12, 12, 0.8);
+
+    .connect-component{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 30px;
+
+        .chat-component{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 240px;
+            align-items: center;
+            cursor: pointer;
+
+
+            img{
+                width: 40px;
+            }
+        }
+    }
+
+    .copy-right{
+        margin-left: 10px;
+        margin-top: 30px;
+        color: rgb(163, 163, 163);
+        font-size: 12px;
+    }
+
+
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .back-to-top:hover {
+        background-color: #0056b3;
+    }
+    
+    .back-to-top:active {
+        transform: scale(0.9);
+    }
+    
+    .back-to-top.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        padding: 20px 20px;
+        gap: 10px;
+        height: auto;
+
+        .connect-component{
+            grid-template-columns: repeat(2, 220px);
+            gap: 10px;
+
+            .chat-component{
+                .logo-img{
+                    width: 25px
+                }
+
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .copy-right{
+        margin-left: 10px;
+        margin-top: 30px;
+        color: rgb(163, 163, 163);
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    footer{
+        padding: 20px 20px;
+        gap: 10px;
+        height: auto;
+
+        .connect-component{
+            grid-template-columns: repeat(1, 220px);
+            gap: 10px;
+
+            .chat-component{
+                .logo-img{
+                    width: 25px
+                }
+
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .copy-right{
+        margin-left: 10px;
+        margin-top: 30px;
+        color: rgb(163, 163, 163);
+        font-size: 12px;
+    }
+    
+}

@@ -1,0 +1,38 @@
+1.Keerthana : 67 bw 5 colour 4 copies = 1008 /- ***
+
+2.Alan      : 56 bw 3 colour 3copies = 603 /-
+
+3.Bala      : 66 bw 6 colour 3 copies = 783 /-
+
+4.Nancy     : 64 bw 5 colour 3 copies = 747 /-
+
+5.Nisha     : 60 bw 8 colour 3 copies = 825 /-
+
+6.Kaviya    : 51 bw 3 colour 4 copies = 864 /- Paid
+
+7.Malathi   : 51 bw 13 colour 3 copies = 715 /- Paid
+
+8.Kalai     : 59 bw 3 colour 4 copies = 896 /- Paid
+
+9.Arthi    : 76 bw 6 colour = 813 /- Paid
+
+10.Raju     : 49 5 colour  = 702 /-
+
+11.Paramashivam : 50 bw 5 colour = 705 /-
+
+
+TOTAL : 8,501 /-
+
+
+
+ARTHI : 813/- PAID
+MALATHI : 715/- PAID
+KAVIYA : 864/- PAID
+KALAI : 896/- PAID
+KEERTHANA : 1008/-
+ALAN : 603/-
+BALA : 783/-
+NANCY : 747/-
+NISHA : 825/-
+RAJU : 702/-
+PARAMASHIVAM : 705/-
