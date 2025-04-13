@@ -38,6 +38,7 @@ const Second = () => {
           <Link to={'https://drive.google.com/file/d/1p7Gs82jGpUss0QLBUc1PYb6XPYpKZzNb/view?usp=sharing'} target='_blank'>
             <button className='download-cv'>Download CV</button>
           </Link>
+          
           <div className='talk-me' onClick={openWhatsApp}>
             <img src={whatsapp} alt="" />
           </div>
