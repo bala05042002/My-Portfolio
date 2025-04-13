@@ -54,7 +54,9 @@ const Main = () => {
                     </div>
                 </Link>
             </div>
-            <button className='download-resume'>Download Resume</button>
+            <Link to={'https://drive.google.com/file/d/1p7Gs82jGpUss0QLBUc1PYb6XPYpKZzNb/view?usp=sharing'} target='_blank'>
+                <button className='download-resume'>Download Resume</button>
+            </Link>
         </section>
 
         <section className="section-2">

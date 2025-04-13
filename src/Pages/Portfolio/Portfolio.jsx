@@ -2,7 +2,12 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div
+      style={{
+        height: '100vh',
+      }}
+    >
+    </div>
   )
 }
 
