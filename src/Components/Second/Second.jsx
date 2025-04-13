@@ -1,6 +1,7 @@
 import React from 'react';
 import './Second.scss';
 import whatsapp from "../../assets/whatsapp.svg";
+import { Link } from 'react-router-dom';
 
 const Second = () => {
   const phoneNumber = "916382028774"; // Replace with your phone number (use country code without the "+" sign)
@@ -34,7 +35,9 @@ const Second = () => {
         </ul>
 
         <div className='hire-button'>
-          <button className='download-cv'>Download CV</button>
+          <Link to={'https://drive.google.com/file/d/1p7Gs82jGpUss0QLBUc1PYb6XPYpKZzNb/view?usp=sharing'} target='_blank'>
+            <button className='download-cv'>Download CV</button>
+          </Link>
           <div className='talk-me' onClick={openWhatsApp}>
             <img src={whatsapp} alt="" />
           </div>
